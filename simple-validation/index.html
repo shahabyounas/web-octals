@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" media="screen" href="../style/common.screen.css" />
+    <link rel="stylesheet" media="screen" href="index.screen.css" />
+
+    <script type="module" src="index.client.js"></script>
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <div id="example">
+      <header>
+        <h1>Form Basics</h1>
+        <nav>
+          <ul>
+            <li>Previous</li>
+            <li>Next</li>
+          </ul>
+        </nav>
+      </header>
+
+      <h2>Form Validation</h2>
+      <form>
+        <label for="name">
+          <span> Name: </span>
+          <input type="text" name="name" id="name" required />
+        </label>
+        <span id="name-error" role="alert" aria-live="polite" hidden></span>
+
+        <label for="email">
+          <span> Email: </span>
+          <input type="email" name="email" id="email" required />
+        </label>
+        <span id="email-error" role="alert" aria-live="polite" hidden></span>
+
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

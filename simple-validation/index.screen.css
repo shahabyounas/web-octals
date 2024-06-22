@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1em;
+}
+
+
+label>span {
+    font-weight: bold;
+}
+
+.invalid>input {
+    border-color: var(--error-color);
+    background-color: var(--error-bg-color);
+}
+
+[role=alert] {
+    color: var(--error-color);
+}
+
+form>button {
+    align-self: flex-start;
+    margin-top: 1em;
+}

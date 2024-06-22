@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" media="screen" href="../style/common.screen.css" />
+    <link rel="stylesheet" media="screen" href="index.screen.css" />
+
+    <script type="module" src="index.client.js"></script>
+
+    <title>Simple Input Validation</title>
+  </head>
+  <body>
+    <section id="content">
+      <header>
+        <h1>Simple Forms</h1>
+      </header>
+      <article>
+        <form>
+          <label>
+            <span> Name: </span>
+            <input type="text" name="name" autocomplete="on" required />
+          </label>
+          <span
+            id="name-error"
+            role="alert"
+            aria-live="polite"
+            autocomplete="on"
+          >
+          </span>
+
+          <label for="email">
+            <!-- <label for="email"> -->
+            <span> Email: </span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="on"
+              required
+            />
+            <!-- </label> -->
+          </label>
+          <span id="email-error" role="alert" aria-live="polite"> </span>
+
+          <label>
+            <span> Password: </span>
+            <input type="password" name="password" autocomplete="on" required />
+          </label>
+          <span id="password-error" role="alert" aria-live="polite"> </span>
+
+          <label>
+            <span>Something nice:</span>
+            <input type="text" name="nice" required />
+          </label>
+          <span id="nice-error" role="alert" aria-live="polite" hidden></span>
+
+          <label>
+            <span>Product Key</span>
+            <input type="text" name="key" required />
+          </label>
+          <span id="key-error" role="alert" aria-live="polite" hidden></span>
+          <span id="key-note">Product key looks like XXXX-XXXX-XXXX-XXXX</span>
+
+          <button>Submit</button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
