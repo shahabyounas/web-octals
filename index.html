@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Build fully customized solutions for your business today"
+    />
 
     <link rel="stylesheet" href="./style/common.screen.css" />
     <link rel="stylesheet" href="index.screen.css" />
@@ -11,34 +15,42 @@
       href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+      async
+    ></script>
 
     <script type="module" src="index.client.js"></script>
     <title>Navigation List</title>
   </head>
   <body>
-    <div>
-      <header>
-        <h3>
-          <a href="../"> Web Octals </a>
-        </h3>
-        <nav>
-          <ul>
-            <li><a href="../"> Home </a></li>
-            <li><a href="../"> Services </a></li>
-            <li><a href="../"> Case Study </a></li>
-            <li><a href="../"> Contact </a></li>
-            <li>
-              <button><a href="../"> Get Started </a></button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <!-- The header or main navigation bar starts here -->
+    <header>
+      <h3>
+        <a href="../"> Web Octals </a>
+      </h3>
+      <nav>
+        <ul>
+          <li><a href="../"> Home </a></li>
+          <li><a href="../"> Services </a></li>
+          <li><a href="../"> Case Study </a></li>
+          <li><a href="../"> Contact </a></li>
+          <li>
+            <button><a href="../"> Get Started </a></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- The main section of the home page -->
     <main>
-      <section id="main-content">
+      <!-- First section of the home page, displaying title and animating content -->
+      <section id="main-content" class="major-section">
         <div>
-          <h2>Empowering Your Brands with Custom Web Development and Design</h2>
+          <h2>
+            Empowering Your Brands with fully Customized Application Development
+            and Design Solutions
+          </h2>
           <p id="note">
             Discover the power of expert web development with our dedicated
             team. We craft high-performance websites that not only look stunning
@@ -53,8 +65,8 @@
             </button>
           </div>
         </div>
-        <div>
-          <!-- <img src="../assets/images/dev.jpg" alt="build website" /> -->
+        <div id="home-lottie">
+          <!-- <img src="../assets/images/dev.jpg" alt="build website" loading="lazy" /> -->
           <lottie-player
             src="./assets/lottie/web_design.json"
             background="transparent"
@@ -65,6 +77,9 @@
           </lottie-player>
         </div>
       </section>
+
+      <!-- Section two, rendering the services part of the home page -->
+      <section id="services" class="major-section"></section>
     </main>
   </body>
 </html>
