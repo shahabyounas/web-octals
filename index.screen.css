@@ -127,6 +127,19 @@ div>img {
 }
 
 @media (width < 30em) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    header>nav {
+        margin: 0 auto min(2em, 1vw);
+    }
+
+    header button {
+        display: none;
+    }
+
     div>h2 {
         font-size: 200%;
         max-width: 12em;
